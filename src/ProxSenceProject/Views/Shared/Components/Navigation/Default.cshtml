@@ -1,0 +1,17 @@
+﻿@model IEnumerable<string>
+<a class="btn btn-block btn-default"
+   asp-action="ProjectList"
+   asp-controller="Project"
+   asp-route-category="">
+    Home
+</a>
+@foreach (string projectCategory in Model)
+{
+    <a class="btn btn-block @(projectCategory == ViewBag.SelectedCategory ? "btn-primary" : "btn-default")"
+       asp-action="ProjectList"
+       asp-controller="Project"
+       asp-route-category="@projectCategory"
+       asp-route-page="1">
+        @projectCategory
+    </a>
+}

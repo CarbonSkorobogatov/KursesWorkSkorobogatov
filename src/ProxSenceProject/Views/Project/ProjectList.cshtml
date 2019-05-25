@@ -1,0 +1,49 @@
+﻿@model ProjectListViewModel
+
+<div class="container">
+    <div class="row">
+        <header class="page-header">
+            <h1 class="page-title">Наше портфолио</h1>
+        </header>
+    </div>
+    <section id="portfolio" class="page-section section appear clearfix">
+        <div class="container">
+            <div class="heading">
+                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+            </div>
+            <br />
+            <div class="row">
+                <!--Для навигации-->
+
+                <nav id="filter" class="col-md-12 text-center">
+                        @await Component.InvokeAsync("Navigation")
+                        <!--<ul>
+            <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+        </ul>-->
+                </nav><!--/Для навигации-->
+                <!--Для портфолио-->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                            @foreach (var projects in Model.ProjectData)
+                            {
+                                @Html.Partial("PortfolioProj", projects)
+                            }
+                        </div>
+                    </div>
+                </div><!--/Для портфолио-->
+            </div>
+        </div>
+        <div page-model="@Model.PagingInfo" page-action="ProjectList"
+             page-classes-enabled="true"
+             page-class="btn"
+             page-class-normal="btn-default"
+             page-class-selected="btn-primary" 
+             page-url-category="@Model.CurrentCategory"
+             class="btn-group pull-right">
+        </div>
+    </section>
+</div>

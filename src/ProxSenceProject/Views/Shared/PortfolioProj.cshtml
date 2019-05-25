@@ -1,0 +1,21 @@
+﻿@model Project
+<div class="well">
+    <h3>
+        <strong>@Model.ProjectName</strong>
+        <span class="pull-right label label-primary">
+            @Model.ProjectPrice.ToString("c")
+        </span>
+    </h3>
+    <form id="@Model.ProjectId" asp-action="AddToCart"
+          asp-controller="Cart" method="post">
+        <input type="hidden" asp-for="ProjectId" />
+        <input type="hidden" name="returnUrl"
+               value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+        <span class="lead">
+            @Model.ProjectDescription
+            <button type="submit" class="btn btn-success btn-sm pull-right">
+                Добавить в корзину
+            </button>
+        </span>
+    </form>
+</div>

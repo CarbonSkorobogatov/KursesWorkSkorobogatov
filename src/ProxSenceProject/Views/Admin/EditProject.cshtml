@@ -1,0 +1,40 @@
+﻿@model ProjectImagesViewModel
+@{
+    ViewBag.Title = "Изменение информации о проекте";
+    Layout = "_AdminLayout";
+    
+}
+<form asp-action="EditProject" asp-controller="Admin" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="project.ProjectId" />
+    <div class="form-group">
+        <label asp-for="project.ProjectName">Наименование проекта</label>
+        <div><span asp-validation-for="project.ProjectName" class="text-danger"></span></div>
+        <input asp-for="project.ProjectName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="project.ProjectDescription">Описание проекта</label>
+        <div><span asp-validation-for="project.ProjectDescription" class="text-danger"></span></div>
+        <textarea asp-for="project.ProjectDescription" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="project.ProjectCategory">Категория</label>
+        <div><span asp-validation-for="project.ProjectCategory" class="text-danger"></span></div>
+        <input asp-for="project.ProjectCategory" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="project.ProjectPrice">Цена</label>
+        <div><span asp-validation-for="project.ProjectPrice" class="text-danger"></span></div>
+        <input asp-for="project.ProjectPrice" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageName">Картинка</label>
+        <div><span asp-validation-for="ImageName" class="text-danger"></span></div>
+        <input asp-for="ImageName" type="file" class="form-control" />
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Сохранить</button>
+        <a asp-action="Index" class="btn btn-default">Вернуться обратно</a>
+    </div>
+</form>
+

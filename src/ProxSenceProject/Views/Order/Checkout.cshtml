@@ -1,0 +1,28 @@
+﻿@model Order
+
+<h2>Зполните форму</h2>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="Checkout" method="post">
+    <h3>Укажите ваши данные</h3>
+    <div class="form-group">
+        <label>Имя:</label><input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Отчество:</label><input asp-for="SecondName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Email:</label><input asp-for="EmailAddress" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Телефон:</label><input asp-for="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Страна:</label><input asp-for="Country" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Город:</label><input asp-for="Town" class="form-control" />
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete Order" />
+    </div>
+</form>
