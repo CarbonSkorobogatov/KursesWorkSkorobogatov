@@ -1,0 +1,11 @@
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\bin\Debug\netcoreapp1.0\ProxSenceProject.deps.json
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\bin\Debug\netcoreapp1.0\ProxSenceProject.runtimeconfig.json
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\bin\Debug\netcoreapp1.0\ProxSenceProject.runtimeconfig.dev.json
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\bin\Debug\netcoreapp1.0\ProxSenceProject.dll
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\bin\Debug\netcoreapp1.0\ProxSenceProject.pdb
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.csprojAssemblyReference.cache
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.AssemblyInfoInputs.cache
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.AssemblyInfo.cs
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.dll
+C:\Users\Admin\Dropbox\ProxSenceProject\ProxSenceProject\src\ProxSenceProject\obj\Debug\netcoreapp1.0\ProxSenceProject.pdb
