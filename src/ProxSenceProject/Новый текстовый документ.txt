@@ -1,0 +1,9 @@
+[a,fs] = audioread('Y.mp3');
+for j = 1:1:2
+
+for i = 1:1:10389360
+b(10389360 - i + 1 , j) = a(i,j);
+end
+end
+s = audioplayer(b,fs);
+play(s)
